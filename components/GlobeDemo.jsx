@@ -395,39 +395,48 @@ export function GlobeDemo() {
   ];
 
   return (
-    <div
-      className="flex flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-black bg-white relative w-full">
-      <div
-        className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 1,
-          }}
-          className="div">
-          <h2
-            className="text-center text-xl md:text-4xl font-bold text-black dark:text-white">
-            We sell soap worldwide
-          </h2>
-          <p
-            className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
-            This globe is interactive and customizable. Have fun with it, and
-            don&apos;t forget to share it. :)
-          </p>
-        </motion.div>
-        <div
-          className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
-        <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
-          <World data={sampleArcs} globeConfig={globeConfig} />
-        </div>
+    <div className="flex flex-col md:flex-row items-center justify-center py-20 h-screen dark:bg-black bg-white w-full gap-8">
+      {/* Left: Globe */}
+      <div className="w-full md:w-1/2 h-[500px] relative">
+        <World data={sampleArcs} globeConfig={globeConfig} />
       </div>
+
+      {/* Right: Slogan / Info */}
+      <motion.div
+          className="md:w-1/2 text-center md:text-left max-w-lg"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2 className="text-3xl md:text-5xl font-bold text-white">
+            Flexible <span className="text-cyan-400">Time Zones</span> for{" "}
+            <span className="text-indigo-400">Customer Convenience</span>
+          </h2>
+
+          <p className="mt-4 text-lg text-gray-500">
+            I am highly flexible with working hours and can adapt to any time zone,
+            ensuring seamless communication, real-time collaboration, and timely
+            delivery for clients worldwide.
+          </p>
+
+          <div className="mt-6 flex justify-center md:justify-start gap-4">
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              href="#projects"
+              className="px-6 py-3 rounded-xl bg-cyan-400 text-black font-medium shadow-lg"
+            >
+              View My Work
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              href="#contact"
+              className="px-6 py-3 rounded-xl border border-white text-white font-medium hover:bg-white hover:text-black transition"
+            >
+              Let’s Collaborate
+            </motion.a>
+          </div>
+        </motion.div>
+
     </div>
   );
 }
