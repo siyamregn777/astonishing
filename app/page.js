@@ -7,8 +7,9 @@ import {CompareDemo} from "@/components/CompareDemo.jsx"
 import {FloatingDockDemo} from "@/components/FloatingDockDemo.jsx";
 import {GlobeDemo} from "@/components/GlobeDemo.jsx"
 import {StickyScrollRevealDemo} from "@/components/StickyScrollRevealDemo.jsx";
+import {InfiniteMovingCardsDemo} from "@/components/InfiniteMovingCardsDemo"
 // import {TextGenerateEffectDemo} from "@/components/TextGenerateEffectDemo.jsx"
-import { TimelineDemo } from "@/components/TimelineDemo";
+// import { TimelineDemo } from "@/components/TimelineDemo";
 import { WavyBackgroundDemo } from "@/components/WavyBackgroundDemo.jsx";
 export default function Home() {
   return (
@@ -23,7 +24,8 @@ export default function Home() {
     {/* <TextGenerateEffectDemo/> */}
     <GlobeDemo />
     <StickyScrollRevealDemo/>
-    <TimelineDemo/>
+    <InfiniteMovingCardsDemo />
+    {/* <TimelineDemo/> */}
     <FloatingDockDemo />
    </div>
 
