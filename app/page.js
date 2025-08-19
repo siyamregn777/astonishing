@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import {AuroraBackgroundDemo} from "@/components/AuroraBackgroundDemo"
+// import {AuroraBackgroundDemo} from "@/components/AuroraBackgroundDemo"
 import {BackgroundBeamsWithCollisionDemo} from "@/components/BackgroundBeamsWithCollisionDemo.jsx"
 import {BackgroundBoxesDemo} from "@/components/BackgroundBoxesDemo.jsx";
 import {CardHoverEffectDemo} from "@/components/CardHoverEffectDemo.jsx";
@@ -15,7 +15,7 @@ export default function Home() {
    <div>
     <Navbar />
     <WavyBackgroundDemo/>
-    <AuroraBackgroundDemo />
+    {/* <AuroraBackgroundDemo /> */}
     <BackgroundBeamsWithCollisionDemo />
     <BackgroundBoxesDemo />
     <CardHoverEffectDemo />
