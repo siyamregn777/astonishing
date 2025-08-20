@@ -41,6 +41,8 @@ export function BackgroundBoxesDemo() {
           </div>
           <div className="bg-white/10 backdrop-blur-md px-4 py-3 rounded-lg shadow-md">
             Tailwind CSS & UI/UX
+          </div><div className="bg-white/10 backdrop-blur-md px-4 py-3 rounded-lg shadow-md">
+            MERN & FIrbase
           </div>
           <div className="bg-white/10 backdrop-blur-md px-4 py-3 rounded-lg shadow-md">
             REST APIs & GraphQL
