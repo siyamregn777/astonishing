@@ -5,8 +5,10 @@ import { Button } from "@/components/ui/button"; // assuming you use shadcn/ui
 
 export function WavyBackgroundDemo() {
   return (
-    <WavyBackground className="max-w-4xl mx-auto pb-40 px-6">
-      <p className="text-3xl mt-3 md:text-5xl lg:text-7xl text-white font-bold text-center leading-tight">
+    <section id="home">
+      
+    <WavyBackground className="max-w-4xl mx-auto pb-40 px-6 mt-20">
+      <p className="text-3xl  md:text-5xl lg:text-7xl text-white font-bold text-center leading-tight">
         Siyamregn Yeshidagna
       </p>
       <p className="text-lg md:text-2xl mt-4 text-white font-medium text-center">
@@ -18,18 +20,19 @@ export function WavyBackgroundDemo() {
       </p>
 
       <div className="flex justify-center mt-8 gap-4">
-        <Button 
-          className="px-6 py-3 rounded-xl text-lg shadow-lg bg-white text-black hover:scale-105 transition-transform"
-        >
-          View My Work
-        </Button>
-        <Button 
+        <Button
+            asChild
+            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-xl shadow-lg hover:shadow-xl transition"
+                  >
+            <a href="#projects">View My Work</a>
+           </Button>
+        <Button asChild
           variant="outline" 
           className="px-6 py-3 rounded-xl text-lg border-white text-white hover:bg-white hover:text-black transition-colors"
-        >
-          Hire Me
+        ><a href="#contact">Hire Me</a>
         </Button>
       </div>
     </WavyBackground>
+    </section>
   );
 }

@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 const Navbar = () => {
   const [open, setOpen] = useState(false)
 
-  const navItems = ["Home", "Services", "Projects", "About", "Contact"]
+  const navItems = ["Home", "About", "SKills", "Projects", "Contact"]
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-lg shadow-md">
@@ -42,9 +42,13 @@ const Navbar = () => {
 
         {/* CTA Button (Desktop) */}
         <div className="hidden md:block">
-          <Button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-xl shadow-lg hover:shadow-xl transition">
-            Get Started
+          <Button
+            asChild
+            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-xl shadow-lg hover:shadow-xl transition"
+          >
+            <a href="#contact">Get Started</a>
           </Button>
+          
         </div>
 
         {/* Mobile Menu Toggle */}

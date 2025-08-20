@@ -5,72 +5,54 @@ import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 
 const content = [
   {
-    title: "Collaborative Editing",
+    title: "Travel reviews",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. Streamline your workflow and boost productivity.",
+      "Read honest travel reviews from travelers around the world to plan your next adventure. Discover destinations, accommodations, and activities that match your style.",
     content: (
       <div className="flex h-full w-full items-center justify-center">
-        <a href="https://example.com/collaborative-editing" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.tripexpert.com/" target="_blank" rel="noopener noreferrer">
           <img
-            src="/collaborative.webp"
+            src="/s1.png"
             width={300}
             height={300}
             className="object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
-            alt="Collaborative Editing Demo"
+            alt="Travel Reviews Demo"
           />
         </a>
       </div>
     ),
   },
   {
-    title: "Real-Time Changes",
+    title: "RCūox Digital Studio",
     description:
-      "See changes as they happen. Track every modification in real time. Say goodbye to version confusion and embrace smooth updates instantly.",
+      "Experience professional digital solutions with RCūox Digital Studio. From web design to branding, we deliver creative and effective results for your business.",
     content: (
       <div className="flex h-full w-full items-center justify-center">
-        <a href="https://example.com/real-time-changes" target="_blank" rel="noopener noreferrer">
+        <a href="https://cuox.theandro.com/" target="_blank" rel="noopener noreferrer">
           <img
-            src="/linear.webp"
+            src="/s2.png"
             width={300}
             height={300}
             className="object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
-            alt="Real-Time Changes Demo"
+            alt="RCūox Digital Studio Demo"
           />
         </a>
       </div>
     ),
   },
   {
-    title: "Version Control",
+    title: "Aperture",
     description:
-      "Never stress about version control again. Always work on the most recent version of your project. Keep your team aligned and maintain workflow seamlessly.",
+      "Aperture helps you manage project versions seamlessly. Keep your team synchronized, avoid version conflicts, and always work on the latest updates.",
     content: (
       <div className="flex h-full w-full items-center justify-center">
-        <a href="https://example.com/version-control" target="_blank" rel="noopener noreferrer">
+        <a href="https://aperture.theandro.com/" target="_blank" rel="noopener noreferrer">
           <img
-            src="/version.webp"
+            src="/s3.png"
             width={300}
             height={300}
             className="object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
-            alt="Version Control Demo"
-          />
-        </a>
-      </div>
-    ),
-  },
-  {
-    title: "Project Scalability",
-    description:
-      "Scale your projects effortlessly. Add new features, update content, and manage multiple workflows without disrupting your team's productivity.",
-    content: (
-      <div className="flex h-full w-full items-center justify-center">
-        <a href="https://example.com/project-scalability" target="_blank" rel="noopener noreferrer">
-          <img
-            src="/scalability.webp"
-            width={300}
-            height={300}
-            className="object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
-            alt="Project Scalability Demo"
+            alt="Aperture Demo"
           />
         </a>
       </div>
@@ -80,16 +62,26 @@ const content = [
 
 export function StickyScrollRevealDemo() {
   return (
-    <div className="w-full min-h-screen bg-gray-900 text-white py-20 px-4">
-      <h1 className="text-3xl md:text-5xl font-bold text-center mb-10">
-        My Project Showcase
-      </h1>
-      <p className="text-center text-lg max-w-2xl mx-auto text-gray-300 mb-16">
-        Explore the main features of my project with smooth scroll animations
-        and interactive previews. Each section highlights a key aspect of the
-        project.
-      </p>
-      <StickyScroll content={content} />
-    </div>
+    <section id="projects">
+      <div className="w-full min-h-screen bg-gray-900 text-white py-20 px-4">
+        <h1 className="text-3xl md:text-5xl font-bold text-center mb-10">
+          My Project Showcase
+        </h1>
+        <p className="text-center text-lg max-w-2xl mx-auto text-gray-300 mb-16">
+          Explore the main features of my projects with smooth scroll animations
+          <span className="text-orange-500"> and interactive previews.</span>
+        </p>
+        <StickyScroll
+          content={content.map((item) => ({
+            ...item,
+            description: (
+              <p className="text-white text-center md:text-left max-w-xl mx-auto">
+                {item.description}
+              </p>
+            ),
+          }))}
+        />
+      </div>
+    </section>
   );
 }
