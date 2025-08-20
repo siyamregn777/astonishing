@@ -32,6 +32,5 @@ export default function FloatingDockDemo() {
           <FloatingDock items={links} mobileClassName="translate-y-20" desktopClassName="" />
         </div>
     </section>
-    
   );
 }

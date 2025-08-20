@@ -4,6 +4,7 @@ import React from "react";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 
 const content = [
+    
   {
     title: "Travel reviews",
     description:
@@ -71,16 +72,7 @@ export function StickyScrollRevealDemo() {
           Explore the main features of my projects with smooth scroll animations
           <span className="text-orange-500"> and interactive previews.</span>
         </p>
-        <StickyScroll
-          content={content.map((item) => ({
-            ...item,
-            description: (
-              <p className="text-white text-center md:text-left max-w-xl mx-auto">
-                {item.description}
-              </p>
-            ),
-          }))}
-        />
+        <StickyScroll content={content} />
       </div>
     </section>
   );

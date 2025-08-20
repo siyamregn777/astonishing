@@ -19,21 +19,21 @@ const testimonials = [
       "Working with Siyamregn was a game changer for our project. He took our vague ideas and turned them into a sleek, functional product ahead of schedule. His communication was spot on, and his technical skills speak for themselves.",
     name: "Solomon Asregdew",
     title: "Senior Web Developer",
-    image:"/my.png",
+    image:"/sol.png",
   },
   {
     quote:
       "What stood out with Siyamregn was not just his clean code, but his ability to understand our business goals. He made smart suggestions that improved our product, and his execution was flawless.",
     name: "Jacob Alfred",
     title: "Senior Web Developer",
-    image:"/my.png",
+    image:"/jacob.png",
 
   },
   {
     quote: "Siyamregn brings energy and clarity to every stage of the development process. From planning to execution, he thinks like a user and codes like a pro. He’s one of the most dependable developers I’ve worked with..",
     name: "Tadele Tesema",
     title: "A Co-founder Developer at Gago ",
-    image:"/my.png",
+    image:"/tadele.png",
 
   },
   {
@@ -41,7 +41,7 @@ const testimonials = [
       "You rarely find someone who can both design and develop with such creativity and precision. Siyamregn helped us launch faster and better than we imagined. I highly recommend him to any startup team..",
     name: "Michael Johnson",
     title: "Senior web developer",
-    image:"/my.png",
+    image:"#",
 
   },
   
