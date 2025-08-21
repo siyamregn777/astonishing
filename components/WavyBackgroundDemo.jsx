@@ -48,13 +48,13 @@ export function WavyBackgroundDemo() {
           >
             <a href="#projects">View My Work</a>
           </Button>
-          <Button 
+          {/* <Button 
             asChild
             variant="outline" 
             className="px-6 py-3 rounded-xl text-lg border-white text-white hover:bg-white hover:text-black transition-colors"
           >
             <a href="#contact">Hire Me</a>
-          </Button>
+          </Button> */}
         </div>
       </WavyBackground>
     </section>
