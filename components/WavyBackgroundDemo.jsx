@@ -17,7 +17,7 @@ export function WavyBackgroundDemo() {
               initial={{ opacity: 0 }}
               animate={{ opacity: [0, 1, 1, 0] }} // fade in → stay → fade out
               transition={{
-                duration: 2,
+                duration: 3,
                 delay: index * 0.1,
                 repeat: Infinity,
                 repeatDelay: fullName.length * 0.1, // pause before restart
