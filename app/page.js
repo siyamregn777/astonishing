@@ -4,7 +4,7 @@ import {BackgroundBeamsWithCollisionDemo} from "@/components/BackgroundBeamsWith
 import {BackgroundBoxesDemo} from "@/components/BackgroundBoxesDemo.jsx";
 // import {CardHoverEffectDemo} from "@/components/CardHoverEffectDemo.jsx";
 import {CompareDemo} from "@/components/CompareDemo.jsx"
-import FloatingDockDemo from "@/components/FloatingDockDemo.jsx"; // Fixed import
+// import FloatingDockDemo from "@/components/FloatingDockDemo.jsx"; // Fixed import
 import {GlobeDemo} from "@/components/GlobeDemo.jsx"
 import {StickyScrollRevealDemo} from "@/components/StickyScrollRevealDemo.jsx";
 import {InfiniteMovingCardsDemo} from "@/components/InfiniteMovingCardsDemo"
@@ -29,7 +29,7 @@ export default function Home() {
     <StickyScrollRevealDemo/>
     <InfiniteMovingCardsDemo />
     {/* <TimelineDemo/> */}
-    <FloatingDockDemo />
+    {/* <FloatingDockDemo /> */}
    </div>
   );
 }
