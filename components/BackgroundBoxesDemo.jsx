@@ -34,7 +34,7 @@ export function BackgroundBoxesDemo() {
             React & Next.js
           </div>
           <div className="bg-white/10 backdrop-blur-md px-4 py-3 rounded-lg shadow-md">
-            Node.js & Express
+            Node.js , Express & Django
           </div>
           <div className="bg-white/10 backdrop-blur-md px-4 py-3 rounded-lg shadow-md">
             PostgreSQL & MySQL
@@ -42,7 +42,7 @@ export function BackgroundBoxesDemo() {
           <div className="bg-white/10 backdrop-blur-md px-4 py-3 rounded-lg shadow-md">
             Tailwind CSS & UI/UX
           </div><div className="bg-white/10 backdrop-blur-md px-4 py-3 rounded-lg shadow-md">
-            MERN & FIrbase
+            MERN & Firbase
           </div>
           <div className="bg-white/10 backdrop-blur-md px-4 py-3 rounded-lg shadow-md">
             REST APIs & GraphQL
